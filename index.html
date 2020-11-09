@@ -3,10 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>BEM - ITCSS excercise</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    
+    <!-- HEADER -->
+    <header class="row">
+        <!-- BRAND -->
+        <div class="brand col-1">
+            <h1 class="text">BEM -ITCSS excercise</h1>
+        </div>
+        <!-- Menu -->
+        <div class="menu col-3">
+            <a class="link" href="javascript:;">home</a>
+            <a class="link" href="javascript:;">about</a>
+            <a class="link" href="javascript:;">contact</a>
+        </div>
+    </header>
+    <div class="row">
+        <!-- Side nav -->
+        <aside class="side-nav col-1">
+            <!-- Menu -->
+            <ul class="menu">
+                <li class="item">
+                    <a class="link" href="#intro">Intro</a>
+                    <a class="link" href="#form">Form</a>
+                </li>
+            </ul>
+        </aside>
+        <!-- Content Section -->
+        <main class="content col-3">
+            <!-- Intro Section -->
+            <section id="intro">
+                <h2 class="headline">Welcome to the ultimate test!</h2>
+                <div class="row">
+                    <p class="text col-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel varius lorem. Sed vel enim vel enim varius convallis. Maecenas ipsum ligula, imperdiet sit amet suscipit a, euismod eget mi. Proin blandit dapibus sodales. Donec ac volutpat tellus. Maecenas dignissim purus eu iaculis luctus. Vivamus suscipit tortor ac posuere fermentum. Vivamus eget tempor ligula. Nullam et congue libero, vitae iaculis magna. Nulla blandit ligula vitae mi tempor molestie. In leo magna, cursus sit amet urna at, dapibus consequat felis. Pellentesque dictum lacus et elit sollicitudin interdum. Nunc mollis sit amet purus a consectetur. Vestibulum ipsum est, tincidunt ut urna vel, gravida hendrerit sem. Phasellus luctus feugiat faucibus.
+                    </p>
+                    <p class="text col-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel varius lorem. Sed vel enim vel enim varius convallis. Maecenas ipsum ligula, imperdiet sit amet suscipit a, euismod eget mi. Proin blandit dapibus sodales. Donec ac volutpat tellus. Maecenas dignissim purus eu iaculis luctus. Vivamus suscipit tortor ac posuere fermentum. Vivamus eget tempor ligula. Nullam et congue libero, vitae iaculis magna. Nulla blandit ligula vitae mi tempor molestie. In leo magna, cursus sit amet urna at, dapibus consequat felis. Pellentesque dictum lacus et elit sollicitudin interdum. Nunc mollis sit amet purus a consectetur. Vestibulum ipsum est, tincidunt ut urna vel, gravida hendrerit sem. Phasellus luctus feugiat faucibus.
+                    </p>
+                </div>
+            </section>
+            <!-- Form Section -->
+            <form>
+                <h2 class="headline">Fill out your personal data and we promise we won't save it at all!</h2>
+                <fieldset>
+                    <legend>Personalia:</legend>
+                    <div class="group">
+                        <label class="label" for="fname">First name:</label>
+                        <input class="field" type="text" id="fname" name="fname">
+                    </div>
+                    <div class="group">
+                        <label class="label" for="fname">Last name:</label>
+                        <input class="field" type="text" id="lname" name="lname">
+                    </div>
+                    <div class="group">
+                        <label class="label" for="email">Email:</label>
+                        <input class="field" type="email" id="email" name="email">
+                    </div>
+                    <div class="group">
+                        <label class="label" for="birthday">Birthday:</label>
+                        <input class="field" type="date" id="birthday" name="birthday">
+                    </div>
+                    <span class="btn">Submit</span>
+                </fieldset>
+            </form>
+        </main>
+    </div> 
+    <!-- Content Section -->
+    <footer class="row">
+        <div class="menu col-4">
+            <a class="link" href="javascript:;">home</a>
+            <a class="link" href="javascript:;">about</a>
+            <a class="link" href="javascript:;">contact</a>
+        </div>
+        <div class="copyrights">
+            <span class="text">All copyrights non existing.</span>
+        </div>
+    </footer>
 </body>
 </html>
