@@ -14,7 +14,7 @@ sass.compiler = require('node-sass');
 task('sass', function () {
   return src(['styles/styles.scss'])
     .pipe(sass().on('error', sass.logError))
-    .pipe(dest('styles'));
+    .pipe(dest('./'));
 });
 
 task('serve', function() {
@@ -22,8 +22,8 @@ task('serve', function() {
     server: "./"
   });
 
-  watch(['styles/**/*.scss'], series('sass'));
-  watch(['styles/**/*.scss', 'index.html']).on('change', browserSync.reload);
+  watch(['styles/**/*.scss', 'styles/**/*.css'], series('sass'));
+  watch(['styles.css', 'index.html']).on('change', browserSync.reload);
 });
 
 task('build', series('sass'));
