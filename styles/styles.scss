@@ -4,11 +4,11 @@
 
 // variables
 $background-color: #f1f1f1;
-$sections-background-color: white;
 $separators-color: grey;
 $text-color: black;
 $cta-color: #555;
 $cta-active-color: black;
+$input-background-color: white;
 
 $font-size: 16px;
 
@@ -22,6 +22,7 @@ body {
     background-color: $background-color;
     color: $text-color;
     font-size: $font-size;
+    font-family: serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -116,11 +117,40 @@ header {
 }
 
 .link {
+    cursor: pointer;
     text-decoration: none;
     color: $cta-color;
     &:hover, &:focus {
         text-decoration: underline;
         color: $cta-active-color;
+    }
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px 15px;
+    border: 1px solid $separators-color;
+    background-color: $input-background-color;
+    &:hover, &:focus {
+        background-color: $background-color;
+    }
+}
+
+.group {
+    display: block;
+    margin-bottom: 10px;
+    .label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .field {
+        width: 100%;
+        padding: 4px 10px;
+        margin-bottom: 5px;
+        border: 1px solid $separators-color;
+        outline: 0;
+        background-color: $input-background-color;
     }
 }
 
