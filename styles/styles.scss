@@ -4,7 +4,11 @@
 
 // variables
 $background-color: #f1f1f1;
+$sections-background-color: white;
+$separators-color: grey;
 $text-color: black;
+$cta-color: grey;
+$cta-active-color: black;
 
 $font-size: 16px;
 
@@ -33,5 +37,36 @@ h1, h2, h3, h4, h5, h6 {
     .col-#{$i} {
         @include col;
         width: 100% / $columns-number * $i;
+    }
+}
+
+// Components
+header {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: $separators-color 1px solid;
+
+    .brand {
+        cursor: pointer;
+        line-height: 40px;
+        .text {
+            font-size: 1.5rem;
+        }
+    }
+
+    .menu {
+        line-height: 19px;
+
+        .link {
+            float: right;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-bottom: 1px solid $background-color;
+            color: $cta-color;
+            &:hover {
+                border-bottom: 1px solid $separators-color;
+                color: $cta-active-color;
+            }
+        }
     }
 }
