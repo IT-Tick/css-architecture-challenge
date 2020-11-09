@@ -1,0 +1,14 @@
+{
+  "name": "bem-itcss",
+  "version": "1.0.0",
+  "description": "A small exercise of using BEM and ITCSS",
+  "scripts": {
+    "start": "gulp"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  }
+}
