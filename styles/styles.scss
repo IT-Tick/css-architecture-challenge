@@ -154,6 +154,29 @@ header {
     }
 }
 
+footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 1px solid $separators-color;
+    .copyrights {
+        line-height: 20px;
+        text-transform: capitalize;
+    }
+    .menu {
+        line-height: 20px;
+        text-align: right;
+        .link {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: $cta-color;
+            text-transform: uppercase;
+            &:hover, &focus {
+                color: $cta-active-color;
+            }
+        }
+    }
+}
+
 .mt-20 {
     margin-top: 20px !important;
 }
