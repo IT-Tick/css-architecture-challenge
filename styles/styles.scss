@@ -28,6 +28,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+ul, ol {
+    margin: 0;
+}
+
 // grid
 .row {
     display: inline-table;
@@ -63,9 +67,28 @@ header {
             text-decoration: none;
             border-bottom: 1px solid $background-color;
             color: $cta-color;
-            &:hover {
+            &:hover, &focus {
                 border-bottom: 1px solid $separators-color;
                 color: $cta-active-color;
+            }
+        }
+    }
+}
+
+.side-nav {
+    border-right: 1px solid $separators-color;
+    .menu {
+        padding: 10px 0 40px;
+        .link {
+            display: block;
+            padding: 10px 5px;
+            text-decoration: none;
+            color: $cta-color;
+            border-bottom: 1px solid $cta-color;
+
+            &:hover, &focus {
+                color: $cta-active-color;
+                border-color: $cta-active-color;
             }
         }
     }

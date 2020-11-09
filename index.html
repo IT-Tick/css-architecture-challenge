@@ -14,27 +14,25 @@
             <h1 class="text">BEM -ITCSS excercise</h1>
         </div>
         <!-- Menu -->
-        <div class="menu col-2">
+        <nav class="menu col-2">
             <a class="link" href="javascript:;">home</a>
             <a class="link" href="javascript:;">about</a>
             <a class="link" href="javascript:;">contact</a>
-        </div>
+        </nav>
     </header>
     <div class="row">
         <!-- Side nav -->
         <aside class="side-nav col-1">
             <!-- Menu -->
-            <ul class="menu">
-                <li class="item">
-                    <a class="link" href="#intro">Intro</a>
-                    <a class="link" href="#form">Form</a>
-                </li>
-            </ul>
+            <nav class="menu">
+                <a class="link" href="#intro">Intro</a>
+                <a class="link" href="#form">Form</a>
+            </nav>
         </aside>
         <!-- Content Section -->
         <main class="content col-3">
             <!-- Intro Section -->
-            <section id="intro">
+            <section class="section" id="intro">
                 <h2 class="headline">Welcome to the ultimate test!</h2>
                 <div class="row">
                     <p class="text col-2">
@@ -47,7 +45,7 @@
                 </div>
             </section>
             <!-- Form Section -->
-            <form>
+            <form class="section" id="form">
                 <h2 class="headline">Fill out your personal data and we promise we won't save it at all!</h2>
                 <fieldset>
                     <legend>Personalia:</legend>
@@ -74,11 +72,11 @@
     </div> 
     <!-- Content Section -->
     <footer class="row">
-        <div class="menu col-4">
+        <nav class="menu col-4">
             <a class="link" href="javascript:;">home</a>
             <a class="link" href="javascript:;">about</a>
             <a class="link" href="javascript:;">contact</a>
-        </div>
+        </nav>
         <div class="copyrights">
             <span class="text">All copyrights non existing.</span>
         </div>
