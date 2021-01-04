@@ -1,9 +1,10 @@
 {
-  "name": "bem-itcss",
+  "name": "css-architecture-challenge",
   "version": "1.0.0",
-  "description": "A small exercise of using BEM and ITCSS",
+  "description": "A small challenge for using CSS architectures",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "build": "gulp build"
   },
   "dependencies": {
     "browser-sync": "^2.26.13",
